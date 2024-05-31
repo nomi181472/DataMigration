@@ -1,0 +1,7 @@
+pg_admin.Core
+sql_server.Core
+.vs
+bin
+obj
+.txt
+logs

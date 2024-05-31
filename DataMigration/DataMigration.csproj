@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Dependencies\" />
+    <Folder Include="logs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+	  <PackageReference Include="Serilog" Version="3.1.1" />
+	  <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+	  <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  
+    <ProjectReference Include="..\pg_admin.Core\pg_admin_core.csproj" />
+    <ProjectReference Include="..\sql_server.Core\sqlserver.Core.csproj" />
+  </ItemGroup>
+
+</Project>
